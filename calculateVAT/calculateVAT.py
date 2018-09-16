@@ -1,4 +1,4 @@
-VATRATE = 7.0
+VAT_RATE = 7.0
 
 def calculateVAT(productPrice):
     if productPrice >= 0:
