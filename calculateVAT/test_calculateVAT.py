@@ -18,5 +18,13 @@ class TestCalculateVAT(unittest.TestCase):
 
         self.assertEqual(actualResult,expectedResult)
 
+    def testCalculateVAT_When_productPrice_minus100_VAT_ShouldBe_Message(self):
+        productPrice = -100.00
+        expectedResult = 'Can not calculate VAT because the product price is minus'
+
+        actualResult = calculateVAT(productPrice)
+
+        self.assertEqual(actualResult,expectedResult)
+
 if __name__ == '__main__':
     unittest.main()

@@ -1,4 +1,8 @@
 VATRATE = 7.0
 
 def calculateVAT(productPrice):
-    return (productPrice * VATRATE)/100
+    if productPrice >= 0:
+        vatValue = (productPrice * VATRATE)/100
+        return vatValue
+    else: return 'Can not calculate VAT because the product price is minus'
+     
