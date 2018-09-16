@@ -20,7 +20,7 @@ class TestCalculateVAT(unittest.TestCase):
 
     def testCalculateVAT_When_productPrice_minus100_VAT_ShouldBe_Message(self):
         productPrice = -100.00
-        expectedResult = 'Can not calculate VAT because the product price is minus'
+        expectedResult = 'Can not calculate VAT because the product price is minus.'
 
         actualResult = calculateVAT(productPrice)
 
