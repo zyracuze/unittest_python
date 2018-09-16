@@ -1,2 +1,4 @@
-def calculateVAT(productPrice, vatRate):
-    return (productPrice * vatRate)/100
+VATRATE = 7.0
+
+def calculateVAT(productPrice):
+    return (productPrice * VATRATE)/100
